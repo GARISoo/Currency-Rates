@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+* {
+    font-family: 'Roboto', cursive;
+}
+
+:root {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('./background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.data { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    border-bottom: 2px solid rgb(67, 62, 62);
+
+    &:hover {
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    max-width: 200px;
+    background-color: rgb(48, 47, 47);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    padding: .5rem 1rem;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(48, 47, 47) transparent transparent transparent;
+}
+
+
+select::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+select::-webkit-scrollbar-thumb {
+    background-color: rgb(40, 36, 36);
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(40, 36, 36);
+}

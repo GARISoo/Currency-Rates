@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin: 6rem auto;
+    border: 2px solid black;
+    border-radius: 1rem;
+    max-width: 25rem;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+    color: #d9d7d6;
+}
+
+.pics {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    width: 90%;
+    min-height: 10rem;
+    -webkit-box-shadow: 0 10px 6px -8px #a89890;
+    -moz-box-shadow: 0 10px 6px -8px #a89890;
+    box-shadow: 0 10px 6px -8px #a89890;
+}
+
+.eth,
+.ada,
+.btc,
+.luna,
+.cro {
+    max-width: 75px;
+    width: 100%;
+}
+
+.eth {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 10;
+}
+
+.ada {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    z-index: 9;
+}
+
+.btc {
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    z-index: 9;
+}
+
+.luna {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    z-index: 8;
+}
+
+.cro {
+    position: absolute;
+    left: 70%;
+    top: 0;
+    z-index: 8;
+}
+
+
+
+button {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #d9d7d6;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: 'Roboto', cursive;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+    &::before {
+        border-radius: 80px;
+        background-image: linear-gradient(92.83deg, #9098a8 0, #36327b 100%);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
+
+    &::after {
+        border-radius: 80px;
+        background-color: initial;
+        background-image: linear-gradient(#110f54 0, #0c0d0d 100%);
+        bottom: 4px;
+        content: "";
+        display: block;
+        left: 4px;
+        overflow: hidden;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        transition: all 100ms ease-out;
+        z-index: -1;
+    }
+}
+
+button:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, #a89890 0%, #6e645f 100%);
+}
+
+button:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+}
+
+button:active:not(:disabled) {
+    color: #ccc;
+}
+
+button:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #a89890 0%, #6e645f 100%);
+}
+
+button:active:not(:disabled):after {
+    background-image: linear-gradient(#110f54 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+}
+
+button:disabled {
+    cursor: default;
+    opacity: .24;
+}

@@ -1,0 +1,95 @@
+.container {
+    color: rgb(208, 203, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    width: 100%;
+    border: 5px solid black;
+    margin: 4rem auto;
+    padding: 1rem 5rem;
+    background-color: rgb(27, 26, 26);
+    box-shadow: rgba(42, 38, 38, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 1rem 1rem 0 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 1rem;
+}
+
+hr {
+    width: 400px;
+    margin: 2rem 0 0 0;
+    border: .5px solid rgb(96, 89, 89);
+}
+
+h6, h5, h4 h3, h2, h1 {
+    margin: 0;
+    color: rgb(208, 203, 203);
+}
+
+select {
+    width: 150px;
+    background-color: rgb(48, 47, 47);
+    color: rgb(208, 203, 203);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 16px;
+    opacity: .7;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    &:hover {
+        opacity: 1;
+        background-color: rgb(48, 47, 47);
+        cursor: pointer;
+    }
+}
+
+.options {
+    background-color: rgb(48, 47, 47);
+    &:hover {
+       color: red;
+    }
+}
+
+.open {
+    padding: 5px 0;
+    background-size: cover;
+    cursor: pointer;
+    opacity: .5;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.close {
+    padding: 15px;
+    background-image: url('https://www.svgrepo.com/show/225856/cancel-close.svg');
+    background-size: cover;
+    cursor: pointer;
+    opacity: .5;
+
+    &:hover {
+        opacity: .9;
+    }
+}
